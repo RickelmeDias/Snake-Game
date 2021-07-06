@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
 body { 
@@ -23,7 +24,6 @@ canvas {
     text-align: center;
 
     font-size: 24px;
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
 
