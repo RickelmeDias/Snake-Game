@@ -121,7 +121,7 @@ window.onload = function () {
                         sx = sy = 0;
                         snake_size = 3;
                         Snake.score = 0;
-                        score_game.innerHTML = `${Snake.score}`;
+                        score_game.innerHTML = `Score: ${Snake.score}`;
                     }
                 }
 

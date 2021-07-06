@@ -17,7 +17,7 @@ body {
     background-color: var(--beige-bg);
 }
 
-header {
+header{
     width: auto;
     height: 70px;
     background-color: var(--dark-blue);
@@ -25,18 +25,17 @@ header {
 
     font-style: normal;
     font-weight: 400;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: space-between;
 }
 
 .container {
-    max-width: 980px;
+    height: 100%;
+
+    margin: 0 6rem 0 6rem;
+   
     display: flex;
-    justify-content: center;
     align-items: center;
+    
+    justify-content: space-between;
 }
 
 canvas {
@@ -55,8 +54,19 @@ canvas {
 }
 
 nav li {
+    font-size: 18px;
     display: inline;
     list-style: none;
+}
+
+nav button {
+    font-size: 18px;
+    width: 180px;
+    height: 40px;
+    border: none;
+    border-radius: 0.3rem;
+
+
 }
 
 li a {
@@ -79,21 +89,21 @@ li a {
   font-style: normal;
   font-weight: 400;
 
-  color: #fb9300;
+  color: var(--orange);
 
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-footer {
-  font-size: 24px;
+footer { 
+  font-size: 22px;
   color: var(--dark-blue);
   font-style: normal;
   font-weight: 300;
 
   text-align: center;
 
-  margin-top: 16px;
+  margin-top: 5rem;
 }
 
