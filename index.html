@@ -13,21 +13,53 @@
     
     <title>Snake</title>
 </head>
+  
     <body>
-        <audio id="sndFood">
-            <source src="./sound/getfood.mp3" type="audio/mp3">
-            Your browser does not support the audio element.
-        </audio>
-        <div id="snake_game">
-            <canvas id="game_stage" width="600" height="600"></canvas>
-            <div id="game_score"></div>
-        </div>
+        <header>
+            <div class="container">
+                <div>
+                    <img src="./assets/images/SnakeGame-logo.svg" alt="Snake Game Logo">
+                </div>
+              
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">Tutorial</a>
+                        </li>
 
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+
+                        <button>
+                                <img src="./assets/images/Github-logo.svg" alt="Github logo">
+                                Contribua
+                        </button>
+
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+      
+        <main>
+            <audio id="sndFood">
+                <source src="./assets/sound/getfood.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+          
+            <div id="snake_game">
+                <canvas id="game_stage" width="600" height="600"></canvas>
+                <div id="game_score"></div>
+            </div>
+        </main>
+
+      
         <footer>
           <span>Desenvolvido por <i>RickelmeDias</i> & <i>EliveutonSouza</i></span>
         </footer>
 
-
+     
         <script src="snake-game.js"></script>
     </body>
 </html>
