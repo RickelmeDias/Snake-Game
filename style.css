@@ -31,6 +31,7 @@ header{
   filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
   cursor: pointer;
 }
+
 .container {
     height: 100%;
 
@@ -42,39 +43,23 @@ header{
     justify-content: space-between;
 }
 
-canvas {
-  margin-top: 64px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  width: 400px;
-}
-
-#snake_game {
+/*-- Nav: menu */
+nav ul {
   display: flex;
-
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
 nav li {
     list-style: none;    
-    font-size: 18px;
+    font-size: 16px;
 
-    margin-left: 8px;
-    margin-right: 8px;
+    margin-left: 18px;
+    margin-right: 18px;
     list-style-type: none;
-
-    
-    display: inline-block; 
-    text-align: left;
 }
 
-.container-buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+/*-- Nav: <button> */
 
 nav button {
     font-size: 18px;
@@ -82,7 +67,7 @@ nav button {
     height: 40px;
     border: none;
     border-radius: 0.3rem;
-    margin-left: 8px;
+    margin-left: 18px;
 
     display: inline;
 }
@@ -99,6 +84,8 @@ nav button:hover {
   cursor: pointer;
 }
 
+/*-- Nav: <a> */
+
 nav a {
     color: var(--beige-bg);
     text-decoration: none;  
@@ -110,6 +97,7 @@ nav a:hover {
   cursor: pointer;
 }
 
+/*-- Main: Game */
 
 #game_score {
   width: 257px;
@@ -131,6 +119,24 @@ nav a:hover {
   align-items: center;
   justify-content: center;
 }
+
+canvas {
+  margin-top: 64px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 400px;
+}
+
+#snake_game {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/*-- Footer: */
 
 footer { 
   font-size: 22px;
