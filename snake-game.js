@@ -1,5 +1,3 @@
-
-
 window.onload = function () {
     const Snake = {
         spd: 1,

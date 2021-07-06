@@ -27,6 +27,10 @@ header{
     font-weight: 400;
 }
 
+#logo:hover {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+  cursor: pointer;
+}
 .container {
     height: 100%;
 
@@ -54,9 +58,22 @@ canvas {
 }
 
 nav li {
+    list-style: none;    
     font-size: 18px;
-    display: inline;
-    list-style: none;
+
+    margin-left: 8px;
+    margin-right: 8px;
+    list-style-type: none;
+
+    
+    display: inline-block; 
+    text-align: left;
+}
+
+.container-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav button {
@@ -65,13 +82,32 @@ nav button {
     height: 40px;
     border: none;
     border-radius: 0.3rem;
+    margin-left: 8px;
 
-
+    display: inline;
 }
 
-li a {
+nav button div {
+  margin: 0 1.25rem 0 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav button:hover {
+  background-color: var(--orange);
+  cursor: pointer;
+}
+
+nav a {
     color: var(--beige-bg);
-    text-decoration: none;
+    text-decoration: none;  
+    font-size: 18px;
+}
+
+nav a:hover {
+  color: var(--orange);
+  cursor: pointer;
 }
 
 
