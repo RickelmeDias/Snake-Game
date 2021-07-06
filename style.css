@@ -1,31 +1,61 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+:root {
 }
 
-body { 
-    background-color: rgb(213, 217, 218);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background-color: rgb(213, 217, 218);
 }
 
 canvas {
-    margin-top: 64px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 400px;
-    
+  margin-top: 64px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 400px;
 }
 
+#snake_game {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+}
 
 #game_score {
-    margin-top: 16px;
-    text-align: center;
+  width: 257px;
+  height: 60px;
 
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
+  background: #343f56;
+  border-radius: 10px;
 
-    color: rgb(52, 63, 86);
+  margin-top: 16px;
+  text-align: center;
+
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+
+  color: #fb9300;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  font-size: 24px;
+  color: #000000;
+  font-style: normal;
+  font-weight: 300;
+
+  text-align: center;
+
+  margin-top: 16px;
+
 }
