@@ -6,10 +6,11 @@
     --beige-bg: #FEFBF7;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
 }
 
 body { 
@@ -22,8 +23,6 @@ header {
     background-color: var(--dark-blue);
     box-shadow: 0px 4px 4px rgba(52, 63, 86, 0.3);
 
-
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
 
@@ -31,8 +30,6 @@ header {
 
     align-items: center;
     justify-content: space-between;
-
-    
 }
 
 .container {
@@ -43,14 +40,19 @@ header {
 }
 
 canvas {
-    margin-top: 64px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 400px;
-    
+  margin-top: 64px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 400px;
 }
 
+#snake_game {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+}
 
 nav li {
     display: inline;
@@ -64,13 +66,34 @@ li a {
 
 
 #game_score {
-    margin-top: 16px;
-    text-align: center;
+  width: 257px;
+  height: 60px;
 
-    font-size: 24px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
+  background: #343f56;
+  border-radius: 10px;
 
-    color: var(--dark-blue);
+  margin-top: 16px;
+  text-align: center;
+
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+
+  color: #fb9300;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+footer {
+  font-size: 24px;
+  color: var(--dark-blue);
+  font-style: normal;
+  font-weight: 300;
+
+  text-align: center;
+
+  margin-top: 16px;
+}
+
