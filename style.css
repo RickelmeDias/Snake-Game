@@ -45,6 +45,11 @@ header {
   font-weight: 400;
 }
 
+#logo:hover {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+  cursor: pointer;
+}
+
 .container {
   height: 100%;
 
@@ -60,18 +65,10 @@ header {
   height: 2rem;
 }
 
-canvas {
-  margin-top: 3rem;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  width: 25rem;
-}
-
-#snake_game {
+/*-- Nav: menu */
+nav ul {
   display: flex;
-
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -79,14 +76,22 @@ nav {
   display: flex;
   align-items: center;
 }
-
+  
 nav li {
+  /*
   font-size: 0.9rem;
   display: inline;
   list-style: none;
+  */
+    list-style: none;    
+    font-size: 16px;
 
-  margin-right: 2rem;
+    margin-left: 18px;
+    margin-right: 18px;
+    list-style-type: none;
 }
+  
+/*-- Nav: <button> */
 
 nav button {
   font-size: 0.9rem;
@@ -109,7 +114,46 @@ nav button {
 li a {
   color: var(--beige-bg);
   text-decoration: none;
+
+    font-size: 18px;
+    width: 180px;
+    height: 40px;
+    border: none;
+    border-radius: 0.3rem;
+    margin-left: 18px;
+
+    display: inline;
 }
+  
+/*
+nav button div {
+  margin: 0 1.25rem 0 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+*/
+
+nav button:hover {
+  background-color: var(--orange);
+  cursor: pointer;
+}
+
+/*-- Nav: <a> */
+
+nav a {
+    color: var(--beige-bg);
+    text-decoration: none;  
+    font-size: 18px;
+}
+
+nav a:hover {
+  color: var(--orange);
+  cursor: pointer;
+}
+
+/*-- Main: Game */
+
 
 #game_score {
   width: 12rem;
@@ -132,8 +176,26 @@ li a {
   justify-content: center;
 }
 
+
+canvas {
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 25rem;
+}
+
+#snake_game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*-- Footer: */
+
 footer {
   font-size: 1rem;
+
   color: var(--dark-blue);
   font-style: normal;
   font-weight: 300;
@@ -141,4 +203,56 @@ footer {
   text-align: center;
 
   margin: 2.4rem 0 2rem 0;
+}
+
+
+/*-- Modal: */
+
+.modal {
+  width: 20rem;
+  height: 15rem;
+  background-color: white;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 90; /* Depth do elementro */
+
+  /*Sumir com o modal overlay */
+  opacity: 0;
+  visibility: hidden;
+  
+}
+
+.modal-overlay-open, .modal-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  background-color: var(--beige);
+  
+  text-align: center;
+
+  width: 50%;
+  max-width: 600px;
+  height: 50%;
+  border: none;
+  border-radius: 1rem;
+
+  margin:0 auto;
+  display:table;
+  position: absolute;
+  left: 0;
+  right:0;
+  top: 20%; 
+
+  z-index: 99;
+
+  opacity: 0;
+  visibility: hidden;
 }
