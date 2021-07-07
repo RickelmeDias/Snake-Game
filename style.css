@@ -149,3 +149,54 @@ footer {
   margin-top: 5rem;
 }
 
+/*-- Modal: */
+
+.modal {
+  width: 20rem;
+  height: 15rem;
+  background-color: white;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 90; /* Depth do elementro */
+
+  /*Sumir com o modal overlay */
+  opacity: 0;
+  visibility: hidden;
+  
+}
+
+.modal-overlay-open, .modal-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  background-color: var(--beige);
+  
+  text-align: center;
+
+  width: 50%;
+  max-width: 600px;
+  height: 50%;
+  border: none;
+  border-radius: 1rem;
+
+  margin:0 auto;
+  display:table;
+  position: absolute;
+  left: 0;
+  right:0;
+  top: 20%; 
+
+  z-index: 99;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
