@@ -1,65 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Snake</title>
-</head>
-  
-    <body>
-        <header>
-                <div class="container">
-                    <div>
-                        <img src="./assets/images/SnakeGame-logo.svg" alt="Snake Game Logo">
-                    </div>
-                
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="#">Tutorial</a>
-                            </li>
+  </head>
 
-                            <li>
-                                <a href="#">Contact</a>
-                            </li>
+  <body>
+    <header>
+      <div class="container">
+        <div>
+          <a href="#"><img src="./assets/images/SnakeGame-logo.svg" alt="Snake Game Logo" /></a>
+        </div>
 
-                            <button>
-                                    <img src="./assets/images/Github-logo.svg" alt="Github logo">
-                                    Contribuir
-                            </button>
+        <nav>
+          <ul>
+            <li>
+              <a href="#">Tutorial</a>
+            </li>
 
-                        </ul>
-                    </nav>
-                </div>
-        </header>
-        
-      
-        <main>
-            <audio id="sndFood">
-                <source src="./assets/sound/getfood.mp3" type="audio/mp3">
-                Your browser does not support the audio element.
-            </audio>
-          
-            <div id="snake_game">
-                <canvas id="game_stage" width="600" height="600"></canvas>
-                <div id="game_score"></div>
-            </div>
-        </main>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
 
-      
-        <footer>
-          <span>Desenvolvido por <i>RickelmeDias</i> & <i>EliveutonSouza</i></span>
-        </footer>
+          <button class="btn-contribuicao">
+            <img  src="./assets/images/Github-logo.svg" alt="Github logo" />
+            <span>Contribuir</span>
+          </button>
+        </nav>
+      </div>
+    </header>
 
-     
-        <script src="snake-game.js"></script>
-    </body>
+    <main>
+      <audio id="sndFood">
+        <source src="./assets/sound/getfood.mp3" type="audio/mp3" />
+        Your browser does not support the audio element.
+      </audio>
+
+      <div id="snake_game">
+        <canvas id="game_stage" width="600" height="600"></canvas>
+        <div id="game_score"></div>
+      </div>
+    </main>
+
+    <footer>
+      <span>Desenvolvido por <i>RickelmeDias</i> & <i>EliveutonSouza</i></span>
+    </footer>
+
+    <script src="snake-game.js"></script>
+  </body>
 </html>
