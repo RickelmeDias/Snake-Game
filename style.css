@@ -225,8 +225,8 @@ footer {
   visibility: hidden;
 }
 
-.modal-overlay-open,
-.modal-open {
+.modal-overlay.open,
+.modal.open {
   opacity: 1;
   visibility: visible;
 }
@@ -237,8 +237,8 @@ footer {
   text-align: center;
 
   width: 50%;
-  max-width: 600px;
-  height: 50%;
+  max-width: 400px;
+  height: 40%;
   border: none;
   border-radius: 1rem;
 
@@ -253,4 +253,34 @@ footer {
 
   opacity: 0;
   visibility: hidden;
+
+  box-shadow: inset 0 0 1em var(--dark-blue), 0 0 1em var(--beige-bg);
+  color: var(--dark-blue);
+}
+
+.modal button {
+  margin-top: 1rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 5rem;
+  background-color: var(--dark-blue);
+  width: 2rem;
+  height: 2rem;
+}
+
+.modal button:hover {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg)
+    brightness(104%) contrast(97%);
+  
+  cursor: pointer;
+}
+
+.modal img {
+  display: flex;
+  justify-content: right;
+  border: none;
+  width: .5rem;
+  height: .5rem;
 }
