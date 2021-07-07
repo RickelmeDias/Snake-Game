@@ -20,7 +20,7 @@ window.onload = function () {
     }, false);
 
     // Game frame update:
-    setInterval(game_running, 80);
+    setInterval(game_running, 90);
 
     // Setting position variables:
     let sx = 0, sy = 0,
