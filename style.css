@@ -13,21 +13,26 @@
   font-family: "Lato", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: var(--dark-blue);
+}
+
 @media (max-width: 1080px) {
   html {
-      font-size: 93.75%; /* Tamanho de 15px */
+    font-size: 93.75%; /* Tamanho de 15px */
   }
 }
 
 @media (max-width: 720px) {
   html {
-      font-size: 87.5%; /* Tamanho de 14px */
+    font-size: 87.5%; /* Tamanho de 14px */
   }
 }
 
 @media (max-width: 400px) {
   html {
-      font-size: 81.3%; /* Tamanho de px */
+    font-size: 81.3%; /* Tamanho de px */
   }
 }
 
@@ -37,7 +42,7 @@ body {
 
 header {
   width: auto;
-  height: 3rem;
+  height: 4.5rem;
   background-color: var(--dark-blue);
   box-shadow: 0px 4px 4px rgba(52, 63, 86, 0.3);
 
@@ -46,7 +51,8 @@ header {
 }
 
 #logo:hover {
-  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg)
+    brightness(104%) contrast(97%);
   cursor: pointer;
 }
 
@@ -62,7 +68,7 @@ header {
 }
 
 .container img {
-  height: 2rem;
+  height: 3rem;
 }
 
 /*-- Nav: menu */
@@ -76,28 +82,23 @@ nav {
   display: flex;
   align-items: center;
 }
-  
-nav li {
-  /*
-  font-size: 0.9rem;
-  display: inline;
-  list-style: none;
-  */
-    list-style: none;    
-    font-size: 16px;
 
-    margin-left: 18px;
-    margin-right: 18px;
-    list-style-type: none;
+nav li {
+  list-style: none;
+  font-size: 0.9rem;
+
+  margin-left: 18px;
+  margin-right: 18px;
+  list-style-type: none;
 }
-  
+
 /*-- Nav: <button> */
 
 nav button {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: var(--dark-blue);
-  width: 8rem;
-  height: 2rem;
+  width: 10rem;
+  height: 3rem;
   border: none;
   border-radius: 0.3rem;
   cursor: pointer;
@@ -115,16 +116,16 @@ li a {
   color: var(--beige-bg);
   text-decoration: none;
 
-    font-size: 18px;
-    width: 180px;
-    height: 40px;
-    border: none;
-    border-radius: 0.3rem;
-    margin-left: 18px;
+  font-size: 18px;
+  width: 180px;
+  height: 40px;
+  border: none;
+  border-radius: 0.3rem;
+  margin-left: 18px;
 
-    display: inline;
+  display: inline;
 }
-  
+
 /*
 nav button div {
   margin: 0 1.25rem 0 1.25rem;
@@ -142,9 +143,9 @@ nav button:hover {
 /*-- Nav: <a> */
 
 nav a {
-    color: var(--beige-bg);
-    text-decoration: none;  
-    font-size: 18px;
+  color: var(--beige-bg);
+  text-decoration: none;
+  font-size: 18px;
 }
 
 nav a:hover {
@@ -153,7 +154,6 @@ nav a:hover {
 }
 
 /*-- Main: Game */
-
 
 #game_score {
   width: 12rem;
@@ -176,13 +176,12 @@ nav a:hover {
   justify-content: center;
 }
 
-
 canvas {
   margin-top: 3rem;
   margin-left: auto;
   margin-right: auto;
   display: block;
-  width: 25rem;
+  width: 40rem;
 }
 
 #snake_game {
@@ -194,7 +193,7 @@ canvas {
 /*-- Footer: */
 
 footer {
-  font-size: 1rem;
+  font-size: 1.5rem;
 
   color: var(--dark-blue);
   font-style: normal;
@@ -204,7 +203,6 @@ footer {
 
   margin: 2.4rem 0 2rem 0;
 }
-
 
 /*-- Modal: */
 
@@ -225,17 +223,17 @@ footer {
   /*Sumir com o modal overlay */
   opacity: 0;
   visibility: hidden;
-  
 }
 
-.modal-overlay-open, .modal-open {
+.modal-overlay-open,
+.modal-open {
   opacity: 1;
   visibility: visible;
 }
 
 .modal {
   background-color: var(--beige);
-  
+
   text-align: center;
 
   width: 50%;
@@ -244,12 +242,12 @@ footer {
   border: none;
   border-radius: 1rem;
 
-  margin:0 auto;
-  display:table;
+  margin: 0 auto;
+  display: table;
   position: absolute;
   left: 0;
-  right:0;
-  top: 20%; 
+  right: 0;
+  top: 20%;
 
   z-index: 99;
 
