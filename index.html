@@ -52,19 +52,17 @@
       </audio>
 
       <div id="snake_game">
-        <canvas id="game_stage" width="600" height="600"></canvas>
+        <canvas id="snake-game" width="600" height="600"></canvas>
         <div id="game_score"></div>
       </div>
     </main>
 
     <footer>
-      <span
-        >Desenvolvido por
+      <span>
+        Desenvolvido por
         <i><a href="http://www.github.com/RickelmeDias">RickelmeDias</a></i> &
-        <i
-          ><a href="http://www.github.com/eliveutonsouza">EliveutonSouza</a></i
-        ></span
-      >
+        <i><a href="http://www.github.com/eliveutonsouza">EliveutonSouza</a></i>
+        </span>
     </footer>
 
     <div class="modal">
@@ -86,6 +84,6 @@
 
     <div class="modal-overlay" onclick="Modal.close()"></div>
 
-    <script src="snake-game.js"></script>
+    <script type="module" src="./scripts/snake-game/game.js"></script>
   </body>
 </html>
