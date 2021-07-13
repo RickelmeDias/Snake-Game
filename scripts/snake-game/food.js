@@ -17,15 +17,15 @@ export function Update(ctx_game) {
     ctx_game.fillRect(Food._px * Snake._sizeSquare, Food._py * Snake._sizeSquare, Snake._sizeSquare, Snake._sizeSquare);
 }
 
-export function CheckIfFoodHasEated() {
+export function CheckIfFoodHasEated(score) {
     // Eating food:
     if (Food._px == Snake._px && Food._py == Snake._py){
-        //snd_gettingFood.play();
+        // snd_gettingFood.play();
         
         Snake._score++;
         Snake._size++;
         Food._px = Math.floor(Math.random()*Snake._am);
         Food._py = Math.floor(Math.random()*Snake._am);
-        // score_game.innerHTML = `Score: ${Snake._score}`;
+        score.innerHTML = `Score: ${Snake._score}`;
     }
 }

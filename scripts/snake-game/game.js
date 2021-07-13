@@ -33,7 +33,7 @@ window.onload = function() {
         Snake.PositionOutScreen();
         Snake.Update(ctxt, score);     
 
-        Food.CheckIfFoodHasEated();
+        Food.CheckIfFoodHasEated(score);
         Food.Update(ctxt);
     }
 
