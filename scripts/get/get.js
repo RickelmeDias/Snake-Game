@@ -1,12 +1,12 @@
 async function getContent () {
     try {
         const response = await fetch('https://cobrinha-backend.herokuapp.com/users');
-        console.log(response);  
+        // console.log(response);  
         const data = await response.json();
-        console.log(data);
+        // console.log(data);
         showJson(data);
     } catch (error) {
-        console.error(error);  
+        // console.error(error);  
     }
 }
 
