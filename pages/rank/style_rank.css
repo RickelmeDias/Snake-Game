@@ -1,0 +1,297 @@
+:root {
+    --dark-blue: #343f56;
+    --red: #f54748;
+    --orange: #fb9300;
+    --beige: #f5e6ca;
+    --beige-bg: #fefbf7;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--dark-blue);
+  }
+  
+  @media (max-width: 1080px) {
+    html {
+      font-size: 93.75%; /* Tamanho de 15px */
+    }
+  }
+  
+  @media (max-width: 720px) {
+    html {
+      font-size: 87.5%; /* Tamanho de 14px */
+    }
+  }
+  
+  @media (max-width: 400px) {
+    html {
+      font-size: 81.3%; /* Tamanho de px */
+    }
+  }
+  
+  body {
+    background-color: var(--beige-bg);
+  }
+  
+  header {
+    width: auto;
+    height: 4.5rem;
+    background-color: var(--dark-blue);
+    box-shadow: 0px 4px 4px rgba(52, 63, 86, 0.3);
+  
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  #logo:hover {
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg)
+      brightness(104%) contrast(97%);
+    cursor: pointer;
+  }
+  
+  .container {
+    height: 100%;
+  
+    margin: 0 6rem 0 6rem;
+  
+    display: flex;
+    align-items: center;
+  
+    justify-content: space-between;
+  }
+  
+  .container img {
+    height: 3rem;
+  }
+  
+  /*-- Nav: menu */
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav li {
+    list-style: none;
+    font-size: 0.9rem;
+  
+    margin-left: 18px;
+    margin-right: 18px;
+    list-style-type: none;
+  }
+  
+  /*-- Nav: <button> */
+  
+  nav button {
+    font-size: 1.2rem;
+    color: var(--dark-blue);
+    width: 10rem;
+    height: 3rem;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .btn-contribuicao img {
+    height: 1.5rem;
+  }
+  
+  li a {
+    color: var(--beige-bg);
+    text-decoration: none;
+  
+    font-size: 18px;
+    width: 180px;
+    height: 40px;
+    border: none;
+    border-radius: 0.3rem;
+    margin-left: 18px;
+  
+    display: inline;
+  }
+  
+  /*
+  nav button div {
+    margin: 0 1.25rem 0 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  */
+  
+  nav button:hover {
+    background-color: var(--orange);
+    cursor: pointer;
+  }
+  
+  /*-- Nav: <a> */
+  
+  nav a {
+    color: var(--beige-bg);
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  nav a:hover {
+    color: var(--orange);
+    cursor: pointer;
+  }
+  
+  /*-- Footer: */
+  
+  footer {
+    font-size: 1.5rem;
+  
+    color: var(--dark-blue);
+    font-style: normal;
+    font-weight: 300;
+  
+    text-align: center;
+  
+    margin: 2.4rem 0 2rem 0;
+  }
+  
+  /*-- Modal: */
+  
+  .modal {
+    width: 20rem;
+    height: 15rem;
+    background-color: white;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 90; /* Depth do elementro */
+  
+    /*Sumir com o modal overlay */
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .modal-overlay.open,
+  .modal.open {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .modal {
+    background-color: var(--beige);
+  
+    text-align: center;
+  
+    width: 50%;
+    max-width: 400px;
+    height: 40%;
+    border: none;
+    border-radius: 1rem;
+  
+    margin: 0 auto;
+    display: table;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20%;
+  
+    z-index: 99;
+  
+    opacity: 0;
+    visibility: hidden;
+  
+    box-shadow: inset 0 0 1em var(--dark-blue), 0 0 1em var(--beige-bg);
+    color: var(--dark-blue);
+  }
+  
+  .modal button {
+    margin-top: 1rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 5rem;
+    background-color: var(--dark-blue);
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  .modal button:hover {
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg)
+      brightness(104%) contrast(97%);
+    
+    cursor: pointer;
+  }
+  
+  .modal img {
+    display: flex;
+    justify-content: right;
+    border: none;
+    width: .5rem;
+    height: .5rem;
+  }
+  
+
+  .rank-list {
+    margin-top: 2rem;
+    list-style: none;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .rank-list h2 {
+    color: #343f56;
+    margin-bottom: 1rem;
+  }
+  .rank-name {
+      background-color: #343f56;
+      color: #f5e6ca;
+
+      font-size: 1em;
+      padding: 0.2rem;
+
+      width: 15rem;
+      border-radius: 1rem 1rem 0 0;
+      text-align: center;
+  }
+
+  .rank-points {
+      background-color: #343f56;
+      color: #fb9300;
+
+      font-size: 1em;
+      padding: 0.2rem;
+
+      width: 15rem;
+      border-radius: 0 0 2rem 2rem;
+      text-align: center;
+
+      margin-bottom: 0.5rem;
+  }
+
+  .snake-rank-icon {
+      width: 4rem;
+      height: 4rem;
+  }

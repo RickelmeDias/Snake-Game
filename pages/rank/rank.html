@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking</title>
+
+    <link rel="stylesheet" href="./style_rank.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    
+
+    <header>
+        <div class="container">
+          <div id="logo">
+            <a href="../../index.html"
+              ><img
+                src="../../assets/images/SnakeGame-logo.svg"
+                alt="Snake Game Logo"
+            /></a>
+          </div>
+  
+          <nav>
+            <ul>
+              <li>
+                <a href="#" onclick="Modal.open()">Tutorial</a>
+                <a href="#" >Ranking</a>
+              </li>
+            </ul>
+  
+            <a href="https://github.com/RickelmeDias/Snake-Game" target="_blank">
+              <button class="btn-contribuicao">
+                <img src="../../assets/images/Github-logo.svg" alt="Github logo" />
+                <span>Contribuir</span>
+              </button>
+            </a>
+          </nav>
+        </div>
+      </header>
+  
+      <main>
+        
+        <div class="rank-list">
+            <img class="snake-rank-icon" src="../../assets/images/snake-svg.svg" alt="snake icon">
+
+            <h2>Ranking</h2>
+            
+            <div id="score-rank"></div>
+        </div>
+
+      </main>
+  
+      <footer>
+        <span>
+          Desenvolvido por
+          <i><a href="http://www.github.com/RickelmeDias">RickelmeDias</a></i> &
+          <i><a href="http://www.github.com/eliveutonsouza">EliveutonSouza</a></i>
+          </span>
+      </footer>
+  
+      <div class="modal">
+          
+          <div class="modal-align">
+              <button onclick="Modal.close()">
+                <img src="../../assets/images/closeModal.png" alt="Close modal">
+              </button>
+              <br><br>
+              <h2>How to play</h2>
+              <p>Commands and What to do?</p>
+              <br><br>
+              <h4>Move:</h4><span>Arrow( Left, Up, Right and Down)</span>
+              <br><br>
+              <h4>To get score:</h4><span>you need to eat the red square.</span>
+          </div>
+  
+      </div>
+  
+      <div class="modal-overlay" onclick="Modal.close()"></div>
+
+      <script src="../../scripts/web/modal.js"></script>
+      <script src="../../scripts/get/get.js"></script>
+
+
+</body>
+</html>
