@@ -49,14 +49,17 @@
 </br>✔️ Open Tutorial Button
 </br>✔️ Snake Movement
 </br>✔️ Score
+</br>✔️ Ranking
+</br>✔️ Get | Post
 </p>
 
 
 ## Deploy
-✔️ 2021 07 12
+
+✔️ 2021 07 12 : Html, Css, Js and Snake Game.
 ![snake-game-deploy-21-07-12](https://user-images.githubusercontent.com/43411893/125526184-fe3fba4c-459b-46ab-8d6c-d2a25fcf757b.PNG)
 
-✔️ 2021 07 14
+✔️ 2021 07 14 : Ranking / Getting from backend
 ![snake-game-deploy-21-07-14](https://user-images.githubusercontent.com/43411893/125714655-2fd15318-e826-4384-80a4-54e83db3f4e6.PNG)
 
 ## Requisitions
