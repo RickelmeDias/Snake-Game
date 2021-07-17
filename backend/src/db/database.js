@@ -1,5 +1,6 @@
 // Database .env config:
 require('dotenv').config();
+
 const db = {
     USER: process.env.DB_USER,
     HOST: process.env.DB_HOST,
