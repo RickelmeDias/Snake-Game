@@ -1,31 +1,66 @@
-const utils = require('./utils.js');
-const db = require('./database');
+// ===== Console DEBUG =====
+const Console_DEBUG = false;
 
-// Async functions to connect on the db and execute SQL to create table:
+// ===== Requires =====
+const utils = require('./utils.js');        // Utility for database codes.
+const db = require ('./database');          // Database to connect.
 
+
+
+//==================================
+// ===== Select Table Function =====
+// =================================
+
+// Async function to connect on the db and execute SQL to SELECT values:
 async function selectTable(table_name, column_sequence, order) {
-    let result;
+    
+    client = db.createClient(); // Connecting to database.
+    await client.connect();     // Waiting for connecting.
+    
+    let result;                 // Variable to get the DB selected values/
 
-    await db.connect();
-    // Try to insert the value
+    // Getting the value using "SELECT" SQL COMMAND:
 
     try{
-        result = await db.query(newSelect(table_name, column_sequence, order));
-        console.log(`The values has been selected from table ${table_name}!`);
+        result = await client.query(newSelect(table_name, column_sequence, order));
+        
+        // Console.log to debug if the command had run.
+        Console_DEBUG === true ? console.log(`The values has been selected from table ${table_name}!`) : "";
     } catch (error) {
-        if (error = ` `){ 
-            console.error(`\n\nERROR: Your select has an error!\n\n`);
+        if (error = ` `){
+            // Console Error if select values are wrong:
+            Console_DEBUG === true ? console.error(`\n\nERROR: Your select has an error!\n\n`) : "";
         }else{
-            console.error(error);
+            // Console Error:
+            // console.error(error);
         }
     }
-    await db.end();
 
-    return result;
+    // Leaving client
+    await client.end();
+
+    // Returning (SELECT) command value.
+    return result.rows;
 }
 
-// A function to Add Column in the "Table Create":
 
+
+
+
+// =============================================================
+// =====  Other Functions to use in "selectTable" Function =====
+// =============================================================
+
+
+// (SELECT) SQL COMMAND EXECUTE A NEW:
+function newSelect(table_name, column_sequence, order)  {
+    return (
+        `SELECT ${column_sequence} FROM ${table_name} ${order};`
+    );
+}   
+
+
+// A COLUMN SEQUENCE E.G: ( SELECT (NAME,SCORE) )
 function ColumnSequence(...columns) {
     // This util funtion will add " , " between values and verify the typeof (just if first param is true) them.
     if (columns[0] != "*"){
@@ -35,16 +70,8 @@ function ColumnSequence(...columns) {
     }
 }
 
-// Create a new Table:
 
-function newSelect(table_name, column_sequence, order)  {
-    return (
-        `SELECT ${column_sequence} FROM ${table_name} ${order};`
-    );
-}   
-
-// Order the table
-
+// TABLE ORDER AND WHAT DEFINE THIS ORDER E.G: OrderByCrescent(false, 'score')
 function OrderByCrescent(crescent, column) {
     if (crescent){
         return `ORDER BY ${column} ASC`;
@@ -53,8 +80,36 @@ function OrderByCrescent(crescent, column) {
     }
 }
 
+
+
+
+
+
+
+
+// Function will be exported for use:
+
+async function gettingRank(table_name, orderByCrescent, orderColumnReference, ...columnSequence) {
+    const value_req = await selectTable(
+                        table_name,
+                        ColumnSequence(columnSequence),
+                        OrderByCrescent(orderByCrescent, orderColumnReference)
+                        )
+
+                        Console_DEBUG === true ? console.error(value_req) : "";
+    return value_req;
+}
+
+
+
+
+
+// ===========================================
+// =====  Module Exports for this module =====
+// ===========================================
+
+// Testing Table Create:
+
 module.exports = {
-    selectTable:  selectTable,
-    ColumnSequence: ColumnSequence,
-    OrderByCrescent: OrderByCrescent
+    gettingRank: gettingRank
 }
