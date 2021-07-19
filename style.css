@@ -154,15 +154,18 @@ nav a:hover {
 }
 
 /*-- Main: Game */
-
+#cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #game_score {
-  width: 12rem;
+  width: 10rem;
   height: 3rem;
 
   background: #343f56;
   border-radius: 0.5rem;
 
-  margin-top: 1.3rem;
   text-align: center;
 
   font-size: 1.4rem;
@@ -174,6 +177,30 @@ nav a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  margin: 1.5rem;
+}
+
+#game_name {
+  width: 10rem;
+  height: 3rem;
+
+  background: #343f56;
+  border-radius: 0.5rem;
+
+
+  text-align: center;
+
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+
+  color: var(--orange);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem;
 }
 
 canvas {
