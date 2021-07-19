@@ -23,4 +23,4 @@ const Modal = {
                     .querySelector('.modal')
                     .classList.remove('open');
         }
-} 
+}

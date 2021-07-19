@@ -24,8 +24,6 @@ window.onload = function() {
 
     setInterval(game_running, GameSpeed);
 
-    console.log('teste1');
-
     function game_running() {
         Map.createMap(ctxt, game.width, game.height);
 

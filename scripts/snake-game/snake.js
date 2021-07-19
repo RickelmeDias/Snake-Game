@@ -44,6 +44,12 @@ class SnakeClass {
         this._size++;
     }
 
+    // Functions:
+    snakeReset() {
+        this._score = 0;
+        this._size = 3;
+    }
+
 }
 
 
@@ -89,8 +95,7 @@ export function Update(ctx_game, score) {
 
             if (Snake._trail[s].x == Snake._px && Snake._trail[s].y == Snake._py) {
                 Snake.speedX = Snake.speedY = 0;
-                Snake._size = 3;
-                Snake._score = 0;
+                Snake.snakeReset();
                 score.innerHTML = `Score: ${Snake._score}`;
             }
         }

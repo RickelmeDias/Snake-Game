@@ -55,10 +55,12 @@
       <div id="snake_game">
         <canvas id="snake-game" width="600" height="600"></canvas>
       </div>
+
       <div id="cards">
         <div id="game_name">John</div>
         <div id="game_score"></div>
       </div>
+
     </main>
 
     <footer>
@@ -88,7 +90,33 @@
 
     <div class="modal-overlay" onclick="Modal.close()"></div>
 
+     <!-- onclick="nameForms(event)" -->
+
+    <div class="forms-modal-overlay open"></div>
+    <div class="forms-modal open">
+
+      <form onsubmit="Forms.nameForms(event)">
+
+        <div class="input-group">
+            <label  class="sr-only"
+                    for="name">Name</label>
+            <input  type="text" 
+                    id="name" 
+                    name="name"
+                    placeholder="Descrição"/>
+        </div>
+                  
+            <button class="button-save" type="submit">OK</button>
+      </form>
+      
+
+    </div>
+
     <script type="module" src="./scripts/snake-game/game.js"></script>
+    <script src="./scripts/web/name.js"></script>
+    <script src="./scripts/web/forms.js"></script>
+
     <script src="./scripts/web/modal.js"></script>
+    
   </body>
 </html>

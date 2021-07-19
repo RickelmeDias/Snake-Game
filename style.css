@@ -159,6 +159,18 @@ nav a:hover {
   justify-content: center;
   align-items: center;
 }
+
+.input-group {
+  margin: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-save {
+    color: #fefbf7;
+}
+
 #game_score {
   width: 10rem;
   height: 3rem;
@@ -305,6 +317,82 @@ footer {
 }
 
 .modal img {
+  display: flex;
+  justify-content: right;
+  border: none;
+  width: .5rem;
+  height: .5rem;
+}
+
+
+/* ====== Forms Modal ===========*/
+
+/*-- Modal: */
+.forms-modal-overlay {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 90; /* Depth do elementro */
+
+  /*Sumir com o modal overlay */
+  opacity: 0;
+  visibility: hidden;
+}
+
+.forms-modal-overlay.open,
+.forms-modal.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.forms-modal {
+  background-color: var(--beige);
+
+  text-align: center;
+
+  width: 60%;
+  max-width: 80%;
+  height: 30%;
+  border: none;
+  border-radius: 1rem;
+
+  margin: 0 auto;
+  display: table;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 20%;
+
+  z-index: 99;
+
+  opacity: 0;
+  visibility: hidden;
+
+  color: var(--dark-blue);
+}
+
+.forms-modal button {
+  margin-top: 1rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 5rem;
+  background-color: var(--dark-blue);
+  width: 2rem;
+  height: 2rem;
+}
+
+.forms-modal button:hover {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg)
+    brightness(104%) contrast(97%);
+  
+  cursor: pointer;
+}
+
+.forms-modal img {
   display: flex;
   justify-content: right;
   border: none;

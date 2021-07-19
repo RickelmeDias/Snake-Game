@@ -22,8 +22,7 @@ export function CheckIfFoodHasEated(score) {
     if (Food._px == Snake._px && Food._py == Snake._py){
         // snd_gettingFood.play();
         
-        Snake._score++;
-        Snake._size++;
+        Snake.snakeAdd();
         Food._px = Math.floor(Math.random()*Snake._am);
         Food._py = Math.floor(Math.random()*Snake._am);
         score.innerHTML = `Score: ${Snake._score}`;
