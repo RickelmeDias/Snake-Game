@@ -12,7 +12,7 @@
 
 > A front-end web site with Snake-Game usign Javascript. 🐍🕹️
 
-</br>
+---
 
 <h4 align="center"\>
 <a href="https://github.com/RickelmeDias/Snake-Game" target="_blank"><img src="https://img.shields.io/github/issues/RickelmeDias/Snake-Game"/></a>
@@ -22,6 +22,10 @@
 <a href="https://rickelmedias.github.io/Snake-Game/" target="_blank"><img src="https://img.shields.io/badge/Snake%20Game%20Web%20Site-OPEN-red"/></a>
 
 </br>
+
+
+---
+
 
 ### Index
 
@@ -37,11 +41,19 @@
  
 </br>
 
+
+---
+
+
 ## Project Description
 
 <p align="justify">
 </br>📃 The purpose of this project is to learn more about HTML, CSS, JS and also make the code available for improvement and studies.
 </p>
+
+
+---
+
 
 ## Functionalities
 
@@ -51,26 +63,192 @@
 </br>✔️ Score
 </br>✔️ Ranking
 </br>✔️ Get | Post
+</br>✔️ Choose your name
+</br>✔️ Getting DB data { name, score } 
+</br>✔️ Posting on DB datas { name, score }
 </p>
+
+
+---
 
 
 ## Deploy
 
-✔️ 2021 07 12 : Html, Css, Js and Snake Game.
-![snake-game-deploy-21-07-12](https://user-images.githubusercontent.com/43411893/125526184-fe3fba4c-459b-46ab-8d6c-d2a25fcf757b.PNG)
+<h3>🎯 Front-end</h3>
 
+✔️ 2021 07 12 : Html, Css, Js and Snake Game.
+<details>
+  <p align="center">
+    <img src="https://user-images.githubusercontent.com/43411893/125526184-fe3fba4c-459b-46ab-8d6c-d2a25fcf757b.PNG" alt="snake-game-deploy-21-07-12" width="800"/>
+  </p>
+</details>
+</br>
 ✔️ 2021 07 14 : Ranking / Getting from backend
-![snake-game-deploy-21-07-14](https://user-images.githubusercontent.com/43411893/125714655-2fd15318-e826-4384-80a4-54e83db3f4e6.PNG)
+<details>
+  <p align="center">
+    <img src="https://user-images.githubusercontent.com/43411893/125714655-2fd15318-e826-4384-80a4-54e83db3f4e6.PNG" alt="snake-game-deploy-21-07-14" width="800"/>
+  </p>
+</details>
+</br>
+✔️ 2021 07 18 : Name added
+<details>
+  <p align="center">
+    <img src="https://user-images.githubusercontent.com/43411893/126370478-f476dde1-25d2-4be6-8157-bb15519e0ae5.png" alt="snake-game-deploy-21-07-18-00" width="800"/>
+  </p>
+  <p align="center">
+    <img src="https://user-images.githubusercontent.com/43411893/126370647-1b72a5c9-a953-475f-9819-80e27aa2f82c.png" alt="snake-game-deploy-21-07-18-01" width="800"/>
+  </p>
+</details>
+</br>
+✔️ 2021 07 18 : Ranking update button
+<details>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/43411893/126370753-11ef3606-5d06-4da5-996b-c6c9b5635501.png" alt="snake-game-deploy-21-07-18-02" width="100"/>
+</p>
+</details>
+</br>
+
+<h3>📮 Back-end</h3>
+✔️ 2021 07 17 : Rank table created usign SQL and PostgreSQL
+<details>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/43411893/126371807-a777f4c7-c2f8-4f1e-95fc-ae009630d304.png" alt="snake-game-deploy-21-07-17-02" width="800"/>
+</p>
+</details>
+</br>
+✔️ 2021 07 17 : Backend files added to acess Database and start server.
+<details>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/43411893/126375542-19f0a399-4c0b-436e-be2b-579baf17eccc.png" alt="snake-game-deploy-21-07-17-02" width="200"/>
+</p>
+</details>
+
+
+---
+
 
 ## Requisitions
-
+<h3>Front-end</h3>
 <p align="justify">
-  💻 We used the Live Server vscode plugin to run this code.
+<a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank">
+<img src="https://img.shields.io/badge/Live%20server-GO-blue?style=plastic&logo=visualstudiocode" alt="live-server"/></a>
+
+  Live server extension to run the front-end. The Live Server is a VS Code extension.
+
+  
+<h3>Back-end</h3>
+<p align="justify">
+<a href="https://www.postgresql.org/" target="_blank">
+<img src="https://img.shields.io/badge/Postgresql%20Database-GO-violet?style=plastic&logo=postgresql&logoColor=violet" alt="postgres"/></a>
+
+  PostgreSQL is a database open source object-relational.
+
+<a href="https://nodejs.org/en/" target="_blank">
+<img src="https://img.shields.io/badge/Node.JS%20-GO-green?style=plastic&logo=nodedotjs&logoColor=green" alt="node.js"/></a>
+
+  Nodejs to run the javascript on backend and install packages.
+
+<a href="https://www.postman.com/" target="_blank">
+<img src="https://img.shields.io/badge/Node.JS%20-GO-orange?style=plastic&logo=postman&logoColor=orange" alt="postman"/></a>
+
+  *It isn't necessary*, but you can use the postman to test the get and post from the api.
 </p>
 
 
-## How to run this project
+---
 
+
+## How to run this project
+<h3>Front-end</h3>
+
+```
+To run the front-end you just need the live-sever on vscode (you can test and watch it usign this repository deploy link too).
+```
+
+<h3>Back-end</h3>
+<h4>Dependencies</h4>
+<h5>Start the npm</h5>
+
+Express installing:
+
+```console
+ npm init
+```
+
+<h5>Express Dependences</h5>
+
+For this project you'll need to install the express and cors.
+
+Express installing:
+
+```console
+ npm install express
+```
+Express cors installing:
+
+```console
+ npm install cors
+```
+
+<h5>Database Dependences</h5>
+
+To acess the postgres database install this package:
+
+Pg installing:
+
+```console
+ npm install pg
+```
+
+<h4>Dev Dependencies</h4>
+<h5>Nodemon</h5>
+
+To execute the backend and test the code easier:
+
+Nodemon installing:
+
+```console
+ npm install -g nodemon
+```
+
+<h5>Dotenv</h5>
+
+To create an environment file.
+
+Dotenv installing:
+
+```console
+ npm install dotenv
+```
+
+<h4>Configure the dotenv file:</h4>
+
+```js
+  DB_USER="yourDatabaseUser"
+  DB_HOST="yourDatabaseHost"
+  DB_DATABASE="postgres"
+  DB_PASS="yourDatabasePassword"
+  DB_PORT=yourDatabasePort
+  SERVER_PORT=yourServerBackendPort
+```
+
+for example:
+
+```js
+  DB_USER="postgresUser"
+  DB_HOST="localhost"
+  DB_DATABASE="postgres"
+  DB_PASS="password"
+  DB_PORT=5432
+  SERVER_PORT=3003
+```
+
+The 5432 is a default port to postgresql.
+
+<h4>Running backend server</h4>
+```console
+ npm start
+```
 <p align="justify">
   🔗 You can fork or clone it and just run same a normal web site.
 </p>
