@@ -100,8 +100,8 @@ export function Update(ctx_game, score, name) {
         if (Snake._trail[s].x == Snake._px && Snake._trail[s].y == Snake._py) {
             if (Snake._score > 5) {
                 post.postContent(name, Snake._score);
-                alert('You scored has added on web/rank')
-                location.href = '../../pages/rank/rank.html';
+                alert('Your scored has added on web/rank')
+                location.href = '#';
 
             }
 

@@ -67,6 +67,10 @@ const Routes = {
             const frontend_address = routes.frontend.address;
 
             return `${frontend_address}`
+        },
+
+        gotoRank() {
+            return '../../Snake-Game/pages/rank/rank.html';
         }
 
 
