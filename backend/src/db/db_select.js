@@ -55,7 +55,7 @@ async function selectTable(table_name, column_sequence, order) {
 // (SELECT) SQL COMMAND EXECUTE A NEW:
 function newSelect(table_name, column_sequence, order)  {
     return (
-        `SELECT ${column_sequence} FROM ${table_name} ${order};`
+        `SELECT ${column_sequence} FROM ${table_name} ${order} LIMIT 10;`
     );
 }   
 
