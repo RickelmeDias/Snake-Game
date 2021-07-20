@@ -15,12 +15,17 @@
 ---
 
 <h4 align="center"\>
-<a href="https://github.com/RickelmeDias/Snake-Game" target="_blank"><img src="https://img.shields.io/github/issues/RickelmeDias/Snake-Game"/></a>
-<a href="https://github.com/RickelmeDias/Snake-Game" target="_blank"><img src="https://img.shields.io/github/forks/RickelmeDias/Snake-Game"/></a>
-<a href="https://github.com/RickelmeDias/Snake-Game" target="_blank"><img src="https://img.shields.io/github/stars/RickelmeDias/Snake-Game"/></a>
+<a href="https://github.com/RickelmeDias/Snake-Game" target="_blank"><img src="https://img.shields.io/github/issues/RickelmeDias/Snake-Game?style=plastic"/></a>
+<a href="https://github.com/RickelmeDias/Snake-Game" target="_blank"><img src="https://img.shields.io/github/forks/RickelmeDias/Snake-Game?style=plastic"/></a>
+<a href="https://github.com/RickelmeDias/Snake-Game" target="_blank"><img src="https://img.shields.io/github/stars/RickelmeDias/Snake-Game?style=plastic"/></a>
 </br></br>
-<a href="https://rickelmedias.github.io/Snake-Game/" target="_blank"><img src="https://img.shields.io/badge/Snake%20Game%20Web%20Site-OPEN-red"/></a>
-
+<a href="https://rickelmedias.github.io/Snake-Game/" target="_blank"><img src="https://img.shields.io/badge/Snake%20Game%20Web%20Site-OPEN-red?style=plastic"/></a>
+</br></br>
+<a href="#">
+<img src="https://img.shields.io/badge/Back_end%20-Working-lime?style=plastic&logo=Cachet&logoColor=green" alt="backend"/>
+<img src="https://img.shields.io/badge/Front_end%20-Working-lime?style=plastic&logo=Cachet&logoColor=green" alt="backend"/>
+<img src="https://img.shields.io/badge/Snake_Game%20-Working-lime?style=plastic&logo=Cachet&logoColor=green" alt="backend"/>
+</a>
 </br>
 
 
@@ -50,7 +55,9 @@
 <p align="justify">
 </br>📃 The purpose of this project is to learn more about HTML, CSS, JS and also make the code available for improvement and studies.
 </p>
-
+<p align="justify">
+</br>📣 You can test this web-site (front-end) accessing the site https://github.com/RickelmeDias/Snake-Game. The ranking (post your score and see other people score are working too, but it didn't deploy in a server to run 24/7). If you want test the back-end, it's working and integrated with frontend by rest api, you can test the backend usign the fork/clone and following the steps in "How to run this project".
+</p>
 
 ---
 
@@ -186,62 +193,62 @@ To run the front-end you just need the live-sever on vscode (you can test and wa
 ```
 
 <h3>📮 Back-end</h3>
-<h4>Dependencies</h4>
-<h5>Start the npm</h5>
+<h4>🔷 Dependencies</h4>
+<h5>⬛️ Start the npm</h5>
 
-Express installing:
+◼️ Express installing:
 
 ```console
  npm init
 ```
 
-<h5>Express Dependences</h5>
+<h5>⬛️ Express Dependences</h5>
 
 For this project you'll need to install the express and cors.
 
-Express installing:
+◼️ Express installing:
 
 ```console
  npm install express
 ```
-Express cors installing:
+◼️ Express cors installing:
 
 ```console
  npm install cors
 ```
 
-<h5>Database Dependences</h5>
+<h5>⬛️ Database Dependences</h5>
 
-To acess the postgres database install this package:
+To acess the postgres database install this package.
 
-Pg installing:
+◼️ Pg installing:
 
 ```console
  npm install pg
 ```
 
-<h4>Dev Dependencies</h4>
-<h5>Nodemon</h5>
+<h4>🔶 Dev Dependencies</h4>
+<h5>⬛️ Nodemon</h5>
 
-To execute the backend and test the code easier:
+To execute the backend and test the code easier.
 
-Nodemon installing:
+◼️ Nodemon installing:
 
 ```console
  npm install -g nodemon
 ```
 
-<h5>Dotenv</h5>
+<h5>⬛️ Dotenv</h5>
 
 To create an environment file.
 
-Dotenv installing:
+◼️ Dotenv installing:
 
 ```console
  npm install dotenv
 ```
 
-<h4>Configure the dotenv file:</h4>
+<h4>⬛️ Configure the dotenv file:</h4>
 
 ```js
   DB_USER="yourDatabaseUser"
@@ -265,7 +272,7 @@ for example:
 
 The 5432 is a default port to postgresql.
 
-<h4>Running backend server</h4>
+<h4>⬛️ Running backend server</h4>
 
 ```console
  npm start
