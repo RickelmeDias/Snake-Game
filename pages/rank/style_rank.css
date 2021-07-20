@@ -313,3 +313,9 @@
   .update-rank-icon {
     height: 1.5rem;
   }
+
+  
+  #score-rank ul, #score-rank li{
+    text-decoration: none;
+    list-style: none;
+  }

@@ -1,6 +1,6 @@
 async function getContent() {
     try {
-        const response = await fetch('http://localhost:3003/rank');
+        const response = await fetch(Routes.get_route());
         // console.log(response);  
         const data = await response.json();
         // console.log(data);
@@ -17,14 +17,14 @@ function showJson(users) {
 
     for (let user of users) {
         i++;
-        output += `<div class="rank-name"><li>${i} - ${user.name}</li></div><div class="rank-points"><li>${user.score}</li></div>`
+        output += `<div class="rank-order"><div class="rank-name"><ul><li>${i} - ${user.name}</li></ul></div><div class="rank-points"><ul><li>${user.score}</li></ul></div></div>`
     }
 
     document.getElementById('score-rank').innerHTML = output;
 }
 
 window.onload = function () {
-
+    
     getContent();
 
 }

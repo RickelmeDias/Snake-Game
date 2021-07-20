@@ -1,6 +1,6 @@
 export function postContent(name, score) {
     try {
-        const urlPost = 'http://localhost:3003/rank';
+        const urlPost = Routes.post_route();
 
         var xhr = new XMLHttpRequest();
         // console.log(xhr);
@@ -21,4 +21,3 @@ export function postContent(name, score) {
     }
 
 }
-
