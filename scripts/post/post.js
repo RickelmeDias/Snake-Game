@@ -1,23 +1,23 @@
-function postContent () {
+export function postContent (name, score) {
     try {
-        const urlPost = 'https://cobrinha-backend.herokuapp.com/users';
+        const urlPost = 'http://localhost:3003/rank';
 
         var xhr = new XMLHttpRequest();
         // console.log(xhr);
 
-        body = {
-            name: "Test2",
-            points: 165
+        const body = {
+            name: `${name}`,
+            score: score
         }
 
-        // console.log(body);
+        console.log(body);
 
         xhr.open("POST", urlPost, true);
         xhr.setRequestHeader('Content-Type', 'application/json');
         xhr.send(JSON.stringify(body));
         
     } catch (error) {
-        // console.error(error);  
+        console.error(error);  
     }
 
 }

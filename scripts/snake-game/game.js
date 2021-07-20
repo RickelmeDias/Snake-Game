@@ -2,6 +2,8 @@
 import * as Snake from './snake.js';
 import * as Map from './map.js';
 import * as Food from './food.js';
+import * as UtilsName from './withoutName.js';
+import * as Name from '../web/name.js';
 import { Key } from './pressedkey.js';
 
 // Variables:
@@ -25,14 +27,19 @@ window.onload = function() {
     setInterval(game_running, GameSpeed);
 
     function game_running() {
-        Map.createMap(ctxt, game.width, game.height);
+        if (Player.name != "") {
+                Map.createMap(ctxt, game.width, game.height);
 
-        Snake.Move();
-        Snake.PositionOutScreen();
-        Snake.Update(ctxt, score);     
-
-        Food.CheckIfFoodHasEated(score);
-        Food.Update(ctxt);
+                Snake.Move();
+                Snake.PositionOutScreen();
+                Snake.Update(ctxt, score, Player.name);     
+                Food.CheckIfFoodHasEated(score);
+                Food.Update(ctxt);
+        }else{
+                UtilsName.YouNeedChooseAName(ctxt, game.width, game.height);
+        }
     }
+
+    
 
 }

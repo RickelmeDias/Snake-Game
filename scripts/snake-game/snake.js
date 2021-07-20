@@ -1,3 +1,5 @@
+import * as post from '../post/post.js'
+
 class SnakeClass {
     // Constructor:
 
@@ -46,10 +48,12 @@ class SnakeClass {
 
     // Functions:
     snakeReset() {
+
         this._score = 0;
         this._size = 3;
+        
+        
     }
-
 }
 
 
@@ -82,7 +86,7 @@ export function Move() {
     Snake._py += Snake._sy;
 }
 
-export function Update(ctx_game, score) {
+export function Update(ctx_game, score, name) {
     ctx_game.fillStyle = 'rgb(245, 230, 202)';
     
 
@@ -94,6 +98,13 @@ export function Update(ctx_game, score) {
                 Snake._sizeSquare - 1                   );
 
             if (Snake._trail[s].x == Snake._px && Snake._trail[s].y == Snake._py) {
+                if (Snake._score > 5) {
+                    post.postContent(name, Snake._score);
+                    alert('You scored has added on web/rank')
+                    location.href = '../../pages/rank/rank.html';
+                    
+                }
+
                 Snake.speedX = Snake.speedY = 0;
                 Snake.snakeReset();
                 score.innerHTML = `Score: ${Snake._score}`;
