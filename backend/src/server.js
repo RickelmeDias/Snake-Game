@@ -1,5 +1,6 @@
 /* = = = = Snake Game Back-end = = = = */
 // Database .env config:
+const Routes = require('../routes_backend.js')
 require('dotenv').config();
 
 const server = {
@@ -14,9 +15,7 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 
-//{ origin: ``}
-
-app.use(cors());
+app.use(cors({origin: `${Routes.origin()}`}));
 app.use(express.json()); // for parsing application/json
 app.use(express.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 const port = server.PORT;
