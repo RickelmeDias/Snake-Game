@@ -1,4 +1,4 @@
-export function postContent (name, score) {
+export function postContent(name, score) {
     try {
         const urlPost = 'http://localhost:3003/rank';
 
@@ -15,9 +15,9 @@ export function postContent (name, score) {
         xhr.open("POST", urlPost, true);
         xhr.setRequestHeader('Content-Type', 'application/json');
         xhr.send(JSON.stringify(body));
-        
+
     } catch (error) {
-        console.error(error);  
+        console.error(error);
     }
 
 }

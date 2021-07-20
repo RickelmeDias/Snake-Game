@@ -15,17 +15,17 @@ async function createTable(table_name, ...columns) {
     // Try create table.
 
     try {
-        await db.query(newTable(table_name, ...columns));
-        // console.log(`The table named ${table_name} has been CREATED !`);
+        await client.query(newTable(table_name, ...columns));
+        console.log(`The table named ${table_name} has been CREATED !`);
     } catch (error) {
         if (error = `relation "${table_name}" already exists`){
-            // console.error(`\n\nERROR: The table ${table_name} ALREADY EXISTS !\n\n`);
+            console.error(`\n\nERROR: The table ${table_name} ALREADY EXISTS !\n\n`);
         }else{
             // console.error(error);
         }
     }
     
-    await db.end();
+    await client.end();
 
 }
 

@@ -1,12 +1,12 @@
 const Forms = {
-        Open () {
+        Open() {
                 document
-                .querySelector('.forms-modal-overlay')
-                .classList.add('open');
-                
+                        .querySelector('.forms-modal-overlay')
+                        .classList.add('open');
+
                 document
-                .querySelector('.forms-modal')
-                .classList.add('open');
+                        .querySelector('.forms-modal')
+                        .classList.add('open');
         },
 
         Close() {
@@ -20,13 +20,13 @@ const Forms = {
 
         nameForms(event) {
                 event.preventDefault();
-            
+
                 try {
-                    const name = document.querySelector('input#name').value;
-                    executeName(name);
-                    Forms.Close();
-                }   catch (error)   {
-                    alert(error.message);
+                        const name = document.querySelector('input#name').value;
+                        executeName(name);
+                        Forms.Close();
+                } catch (error) {
+                        alert(error.message);
                 }
         }
 

@@ -345,6 +345,7 @@ footer {
 .forms-modal.open {
   opacity: 1;
   visibility: visible;
+  
 }
 
 .forms-modal {
@@ -352,7 +353,7 @@ footer {
 
   text-align: center;
 
-  width: 60%;
+  width: 50%;
   max-width: 80%;
   height: 30%;
   border: none;
@@ -371,17 +372,19 @@ footer {
   visibility: hidden;
 
   color: var(--dark-blue);
+  
 }
 
 .forms-modal button {
-  margin-top: 1rem;
+  margin: 2rem 0 2rem 0;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   border: none;
   border-radius: 5rem;
   background-color: var(--dark-blue);
-  width: 2rem;
+  color: var(--beige);
+  width: 5rem;
   height: 2rem;
 }
 
@@ -398,4 +401,30 @@ footer {
   border: none;
   width: .5rem;
   height: .5rem;
+}
+
+/* Forms Input */
+.input-group {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form label {
+	font-size:14px;
+	color:darkgray;
+	cursor:pointer;
+}
+
+form input {
+  text-align: center;
+	margin:15px 0;
+	padding:15px 10px;
+	width:80%;
+	outline:none;
+	border:1px solid #bbb;
+	border-radius:20px;
+	display:inline-block;
 }

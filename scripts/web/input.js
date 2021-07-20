@@ -1,7 +1,7 @@
-// Disable space on my input name:
+// Disable space on input name:
 
-function nospaces(t){
-    if(t.value.match(/\s/g)){
-      t.value=t.value.replace(/\s/g,'');
-    }
-  }
+function nospaces(typed) {
+        if (typed.value.match(/\s/g)) {
+                typed.value = t.value.replace(/\s/g, '');
+        }
+}

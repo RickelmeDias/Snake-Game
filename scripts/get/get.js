@@ -1,4 +1,4 @@
-async function getContent () {
+async function getContent() {
     try {
         const response = await fetch('http://localhost:3003/rank');
         // console.log(response);  
@@ -23,8 +23,8 @@ function showJson(users) {
     document.getElementById('score-rank').innerHTML = output;
 }
 
-window.onload = function() {
+window.onload = function () {
 
-    getContent ();
+    getContent();
 
 }

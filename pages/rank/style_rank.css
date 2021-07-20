@@ -263,7 +263,6 @@
 
   .rank-list h2 {
     color: #343f56;
-    margin-bottom: 1rem;
   }
   .rank-name {
       background-color: #343f56;
@@ -294,4 +293,23 @@
   .snake-rank-icon {
       width: 4rem;
       height: 4rem;
+  }
+
+  /* Header rank */
+
+  #header-rank {
+    margin: 1rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #header-rank:hover {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+
+  .update-rank-icon {
+    height: 1.5rem;
   }
