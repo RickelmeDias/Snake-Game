@@ -58,7 +58,7 @@
 ## Functionalities
 
 <p align="justify">
-</br>✔️ Open Tutorial Button
+✔️ Open Tutorial Button
 </br>✔️ Snake Movement
 </br>✔️ Score
 </br>✔️ Ranking
@@ -122,6 +122,26 @@
   <img src="https://user-images.githubusercontent.com/43411893/126375542-19f0a399-4c0b-436e-be2b-579baf17eccc.png" alt="snake-game-deploy-21-07-17-02" width="200"/>
 </p>
 </details>
+</br>
+
+<h3>👨‍🚀 Postman</h3>
+✔️ 2021 07 20 : GET
+<details>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/43411893/126395354-c94e8ea7-baa9-49cd-8b27-404aad611045.png" alt="snake-game-deploy-21-07-20-00" width="400"/>
+</p>
+</details>
+</br>
+✔️ 2021 07 20 : POST
+<details>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/43411893/126395457-902e7a2f-1a40-40eb-9997-9e78bcee64b7.png" alt="snake-game-deploy-21-07-20-01" width="400"/>
+</p>
+  
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/43411893/126395615-4ba0e479-ebf8-4d44-ab3f-64a199269ccc.png" alt="snake-game-deploy-21-07-20-02" width="400"/>
+</p>
+</details>
 
 
 ---
@@ -149,7 +169,7 @@
   Nodejs to run the javascript on backend and install packages.
 
 <a href="https://www.postman.com/" target="_blank">
-<img src="https://img.shields.io/badge/Node.JS%20-GO-orange?style=plastic&logo=postman&logoColor=orange" alt="postman"/></a>
+<img src="https://img.shields.io/badge/Postman%20-GO-orange?style=plastic&logo=postman&logoColor=orange" alt="postman"/></a>
 
   *It isn't necessary*, but you can use the postman to test the get and post from the api.
 </p>
@@ -159,13 +179,13 @@
 
 
 ## How to run this project
-<h3>Front-end</h3>
+<h3>🎯 Front-end</h3>
 
 ```
 To run the front-end you just need the live-sever on vscode (you can test and watch it usign this repository deploy link too).
 ```
 
-<h3>Back-end</h3>
+<h3>📮 Back-end</h3>
 <h4>Dependencies</h4>
 <h5>Start the npm</h5>
 
@@ -246,12 +266,10 @@ for example:
 The 5432 is a default port to postgresql.
 
 <h4>Running backend server</h4>
+
 ```console
  npm start
 ```
-<p align="justify">
-  🔗 You can fork or clone it and just run same a normal web site.
-</p>
 
 
 ## Contributors
