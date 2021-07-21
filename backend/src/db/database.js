@@ -7,6 +7,7 @@ const pg = require ('pg');
 
 
 
+
 // Functions to create a client.
 function createClient(){  
         const db = {

@@ -10,7 +10,7 @@ class SnakeClass {
         this._sx = 0;                  // Speed X
         this._sy = 0;                  // Speed Y
 
-        this._am = 20;
+        this._am = 30;
 
         this._size = 3;
         this._trail = [];
