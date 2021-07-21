@@ -175,7 +175,7 @@
 <a href="https://www.figma.com/" target="_blank">
 <img src="https://img.shields.io/badge/Figma%20-GO-cyan?style=plastic&logo=figma&logoColor=cyan" alt="figma"/></a>
   
-  Figma was use to create the web-site design.
+  Figma was use to plan the web-site design.
   
 <h3>Back-end</h3>
 <p align="justify">
@@ -208,9 +208,17 @@ To run the front-end you just need the live-sever on vscode (you can test and wa
 
 <h3>📮 Back-end</h3>
 <h4>🔷 Dependencies</h4>
+<h4>🔷 If you have this repository "package.json"</h4>
+<h5>⬛️ You just need execute this code:</h5>
+
+```console
+ npm install
+```
+
+<h4>🔷 Otherwise follow these steps</h4>
 <h5>⬛️ Start the npm</h5>
 
-◼️ Express installing:
+◼️ NPM starting:
 
 ```console
  npm init
