@@ -172,6 +172,10 @@
 
   Live server extension to run the front-end. The Live Server is a VS Code extension.
 
+<a href="https://www.figma.com/" target="_blank">
+<img src="https://img.shields.io/badge/Figma%20-GO-cyan?style=plastic&logo=figma&logoColor=cyan" alt="figma"/></a>
+  
+  Figma was use to create the web-site design.
   
 <h3>Back-end</h3>
 <p align="justify">
