@@ -149,6 +149,16 @@
   <img src="https://user-images.githubusercontent.com/43411893/126395615-4ba0e479-ebf8-4d44-ab3f-64a199269ccc.png" alt="snake-game-deploy-21-07-20-02" width="400"/>
 </p>
 </details>
+</br>
+
+<h3>👨‍🎨 Figma</h3>
+✔️ 2021 07 8 : First screen designed by Rickelme and Eliveuton.
+<details>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/43411893/126497351-ee75fb3e-247f-445b-9c9b-587fd774e893.png" alt="snake-game-deploy-21-07-08" width="400"/>
+</p>
+</details>
+</br>
 
 
 ---
