@@ -200,7 +200,7 @@ nav a:hover {
   background: #343f56;
   border-radius: 0.5rem;
 
-
+  word-break: break-word;
   text-align: center;
 
   font-size: 1.4rem;
